@@ -6,11 +6,10 @@ import java.util.Scanner;
 public class Ejercicio07Ordenado {
 
     public static ArrayList<Integer> generarPares() {
-
         ArrayList<Integer> numeros = new ArrayList<>();
 
         for (int i = 0; i < 20; i++) {
-            numeros.add(i * 2);
+            numeros.add((i + 1) * 2);
         }
 
         return numeros;
@@ -37,17 +36,16 @@ public class Ejercicio07Ordenado {
             numeros.remove(Integer.valueOf(valor));
             System.out.println("Valor eliminado correctamente.");
         } else {
-            System.out.println("El valor no se encuentra en la lista.");
+            System.out.println(
+                    "El valor no se encuentra en la lista.");
         }
     }
 
     public static void imprimirLista(ArrayList<Integer> numeros) {
-
         System.out.println(numeros);
     }
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
         ArrayList<Integer> numeros = generarPares();

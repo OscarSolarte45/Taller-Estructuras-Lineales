@@ -6,18 +6,12 @@ import java.util.Scanner;
 public class Ejercicio13Simetrica {
 
     public static int[][] generarMatriz(int n) {
-
         int[][] matriz = new int[n][n];
         Random random = new Random();
 
         for (int i = 0; i < n; i++) {
-
-            for (int j = i; j < n; j++) {
-
-                int numero = random.nextInt(21);
-
-                matriz[i][j] = numero;
-                matriz[j][i] = numero;
+            for (int j = 0; j < n; j++) {
+                matriz[i][j] = random.nextInt(21);
             }
         }
 
@@ -25,9 +19,7 @@ public class Ejercicio13Simetrica {
     }
 
     public static boolean esSimetrica(int[][] matriz) {
-
         for (int i = 0; i < matriz.length; i++) {
-
             for (int j = 0; j < matriz.length; j++) {
 
                 if (matriz[i][j] != matriz[j][i]) {
@@ -40,9 +32,7 @@ public class Ejercicio13Simetrica {
     }
 
     public static void imprimirMatriz(int[][] matriz) {
-
         for (int[] fila : matriz) {
-
             for (int numero : fila) {
                 System.out.print(numero + "\t");
             }
@@ -52,7 +42,6 @@ public class Ejercicio13Simetrica {
     }
 
     public static void imprimirEsquinas(int[][] matriz) {
-
         int ultimaFila = matriz.length - 1;
         int ultimaColumna = matriz[0].length - 1;
 
@@ -76,7 +65,6 @@ public class Ejercicio13Simetrica {
     }
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingrese el tamaño de la matriz: ");

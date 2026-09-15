@@ -3,18 +3,16 @@ package arreglos;
 public class Ejercicio02Pares {
 
     public static int[] generarPares() {
-
         int[] pares = new int[100];
 
         for (int i = 0; i < pares.length; i++) {
-            pares[i] = i * 2;
+            pares[i] = (i + 1) * 2;
         }
 
         return pares;
     }
 
     public static void imprimirUnaLinea(int[] numeros) {
-
         System.out.println("100 primeros números pares:");
 
         for (int numero : numeros) {
@@ -25,7 +23,6 @@ public class Ejercicio02Pares {
     }
 
     public static void imprimirDiezLineas(int[] numeros) {
-
         System.out.println("\nNúmeros organizados en 10 líneas:");
 
         for (int i = 0; i < numeros.length; i++) {
@@ -43,7 +40,6 @@ public class Ejercicio02Pares {
     }
 
     public static void main(String[] args) {
-
         int[] pares = generarPares();
 
         imprimirUnaLinea(pares);
