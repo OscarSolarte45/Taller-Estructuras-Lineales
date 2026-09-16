@@ -1,0 +1,12 @@
+# Archivos compilados de Java
+*.class
+
+# Carpeta de archivos compilados
+out/
+
+# NetBeans
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
