@@ -3,6 +3,9 @@
 ### Nombre del estudiante
 
 Oscar Antonio Solarte Martinez
+### Materia
+
+Estructura de Datos Lineales
 
 ## Descripción del taller
 
